@@ -11,7 +11,7 @@ import SearchMoviePage from "./pages/SearchMoviePage";
 
 // import components
 import Navigation from "./components/Navigation";
-
+import DetailPageWrapper from "./pages/DetailPage";
 
 function App() {
   return (
@@ -26,6 +26,7 @@ function App() {
           <Route path="/now-playing" element={<NowPlayingPage />} />
           <Route path="/upcoming" element={<UpcomingPage />} />
           <Route path="/search" element={<SearchMoviePage />} />
+          <Route path="/movies/:id" element={<DetailPageWrapper />} />
         </Routes>
       </main>
     </React.Fragment>
