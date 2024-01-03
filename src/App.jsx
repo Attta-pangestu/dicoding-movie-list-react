@@ -6,8 +6,7 @@ import { Routes, Route} from 'react-router-dom';
 import Home from "./pages/HomePage";
 import NowPlayingPage from "./pages/NowPlayingPage";
 import UpcomingPage from "./pages/UpcomingPage";
-import SearchMoviePage from "./pages/SearchMoviePage";
-
+import SearchMoviePageWrapper from "./pages/SearchMoviePage";
 
 // import components
 import Navigation from "./components/Navigation";
@@ -25,7 +24,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/now-playing" element={<NowPlayingPage />} />
           <Route path="/upcoming" element={<UpcomingPage />} />
-          <Route path="/search" element={<SearchMoviePage />} />
+          <Route path="/search" element={<SearchMoviePageWrapper />} />
           <Route path="/movies/:id" element={<DetailPageWrapper />} />
         </Routes>
       </main>

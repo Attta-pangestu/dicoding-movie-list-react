@@ -1,11 +1,13 @@
 import React from "react";
 import PropTypes from 'prop-types';
 
+
 class SearchBar extends React.Component {
     constructor(props) {
       super(props);
       this.state = {
-        keyword : ''
+        keyword : props.judul || '',
+        
       };
       this.onKeywordChangeHandler = this.onKeywordChangeHandler.bind(this);
       this.onSubmitHandler = this.onSubmitHandler.bind(this);
